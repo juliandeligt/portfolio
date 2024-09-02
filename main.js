@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Typing animation code
-
+    // Typing animation
     const roles = ['Webdeveloper_', 'Webdesigner_', 'Webanalist_', 'Copywriter_'];
     let currentRoleIndex = 0;
     const roleElement = document.getElementById('role');
@@ -38,8 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     typeRole(roles[currentRoleIndex], 0, nextRole);
 
-    // Project slider code
-
+    // Project slider
     const slider = document.querySelector('.project-slider-container');
     const next = document.getElementById('next');
     const prev = document.getElementById('prev');
@@ -96,14 +94,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Center the first project on page load for mobile
     if (isMobile()) {
         centerProject(currentIndex);
     } else {
         scrollProject(currentIndex);
     }
 
-    // Form submission code
+    // Form submission
     function submitForm(event) {
         event.preventDefault();
 
