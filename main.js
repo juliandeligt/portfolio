@@ -100,23 +100,6 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
         scrollProject(currentIndex);
     }
-
-    // Form submission
-    function submitForm(event) {
-        event.preventDefault();
-
-        var name = document.getElementById('name').value;
-        var subject = document.getElementById('subject').value;
-        var message = document.getElementById('message').value;
-
-        var mailtoLink = 'mailto:juliandeligt@hotmail.nl' +
-            '?subject=' + encodeURIComponent(subject) +
-            '&body=' + encodeURIComponent('Name: ' + name + '\n\nMessage:\n' + message);
-
-        window.location.href = mailtoLink;
-    }
-
-    document.getElementById('contact-form').addEventListener('submit', submitForm);
 });
 
 // Fetch and display project data
@@ -231,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 </div>
                             </div>
                             <div class="row-2">
-                                <form name="contact" method="POST" data-netlify="true"">
+                                <form name="contact" method="POST" data-netlify="true" action="/succes">
                                     <label for="name">NAAM:</label><br />
                                     <input type="text" id="name" name="name" /><br /><br />
 
