@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Typing animation
+    // Typing animation code
+
     const roles = ['Webdeveloper_', 'Webdesigner_', 'Webanalist_', 'Copywriter_'];
     let currentRoleIndex = 0;
     const roleElement = document.getElementById('role');
@@ -37,7 +38,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     typeRole(roles[currentRoleIndex], 0, nextRole);
 
-    // Project slider
+    // Project slider code
+
     const slider = document.querySelector('.project-slider-container');
     const next = document.getElementById('next');
     const prev = document.getElementById('prev');
@@ -101,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
         scrollProject(currentIndex);
     }
 
-    // Form submission
+    // Form submission code
     function submitForm(event) {
         event.preventDefault();
 
@@ -117,10 +119,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     document.getElementById('contact-form').addEventListener('submit', submitForm);
-});
 
-// Fetch and display project data
-document.addEventListener('DOMContentLoaded', () => {
+    // Fetch and display project data
     async function fetchAndDisplayProjectData() {
         try {
             const response = await fetch('projects.json');
@@ -248,34 +248,35 @@ document.addEventListener('DOMContentLoaded', () => {
                             </div>
                         </div>
 
-      <footer>
-        <div class="row-1">
-          <div class="col-1"><p>© Julian de Ligt 2024</p></div>
-          <div class="col-2">
-            <a
-              href="https://www.linkedin.com/in/julian-de-ligt-1586b9201?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-              target="_blank"
-            >
-              <img
-                src="icons/logo-linkedin.svg"
-                alt="LinkedIn logo"
-                width="40"
-                height="40"
-              />
-            </a>
-            <a
-              href="https://www.instagram.com/juliandeligt_?igsh=bmNwbWdleWJnNWFp&utm_source=qr"
-              target="_blank"
-            >
-              <img
-                src="icons/logo-instagram.svg"
-                alt="Instagram logo"
-                width="40"
-                height="40"
-              />
-            </a>
-          </div>
-        </div>`;
+                        <footer>
+                            <div class="row-1">
+                                <div class="col-1"><p>© Julian de Ligt 2024</p></div>
+                                <div class="col-2">
+                                    <a
+                                      href="https://www.linkedin.com/in/julian-de-ligt-1586b9201?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                                      target="_blank"
+                                    >
+                                      <img
+                                        src="icons/logo-linkedin.svg"
+                                        alt="LinkedIn logo"
+                                        width="40"
+                                        height="40"
+                                      />
+                                    </a>
+                                    <a
+                                      href="https://www.instagram.com/juliandeligt_?igsh=bmNwbWdleWJnNWFp&utm_source=qr"
+                                      target="_blank"
+                                    >
+                                      <img
+                                        src="icons/logo-instagram.svg"
+                                        alt="Instagram logo"
+                                        width="40"
+                                        height="40"
+                                      />
+                                    </a>
+                                </div>
+                            </div>
+                        </footer>`;
                     container.innerHTML = projectTemplate;
                 } else {
                     console.error('Project not found:', projectName);
