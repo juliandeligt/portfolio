@@ -42,7 +42,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const next = document.getElementById('next');
     const prev = document.getElementById('prev');
     const projects = document.querySelectorAll('.project');
-    const gap = parseInt(window.getComputedStyle(document.querySelector('.project-slider')).gap);
     let isScrolling = false;
     let currentIndex = 0;
 
@@ -100,26 +99,8 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
         scrollProject(currentIndex);
     }
-
-    // Form submission
-    function submitForm(event) {
-        event.preventDefault();
-
-        var name = document.getElementById('name').value;
-        var subject = document.getElementById('subject').value;
-        var message = document.getElementById('message').value;
-
-        var mailtoLink = 'mailto:juliandeligt@hotmail.nl' +
-            '?subject=' + encodeURIComponent(subject) +
-            '&body=' + encodeURIComponent('Name: ' + name + '\n\nMessage:\n' + message);
-
-        window.location.href = mailtoLink;
-    }
-
-    document.getElementById('contact-form').addEventListener('submit', submitForm);
 });
 
-// Fetch and display project data
 document.addEventListener('DOMContentLoaded', () => {
     async function fetchAndDisplayProjectData() {
         try {
@@ -131,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Get all elements with IDs starting with 'projectTemplate'
             const containers = document.querySelectorAll('[id^="projectTemplate"]');
-            
+
             containers.forEach(container => {
                 const containerId = container.id;
                 const projectName = containerId
@@ -192,9 +173,9 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <div class="row-1"></div>
                             </div>
                         </div>
-                            <div class="project-banner-2">
-                                <div class="row-1"></div>
-                            </div>
+                        <div class="project-banner-2">
+                            <div class="row-1"></div>
+                        </div>
 
                         <div class="project-section-3">
                             <div class="row-1">
@@ -248,7 +229,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             </div> 
                         </div>
 
-      <footer>
+                        <footer>
         <div class="row-1">
           <div class="col-1"><p>© Julian de Ligt 2024</p></div>
           <div class="col-2">
