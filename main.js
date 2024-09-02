@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const next = document.getElementById('next');
     const prev = document.getElementById('prev');
     const projects = document.querySelectorAll('.project');
+    const gap = parseInt(window.getComputedStyle(document.querySelector('.project-slider')).gap);
     let isScrolling = false;
     let currentIndex = 0;
 
@@ -101,6 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// Fetch and display project data
 document.addEventListener('DOMContentLoaded', () => {
     async function fetchAndDisplayProjectData() {
         try {
@@ -112,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Get all elements with IDs starting with 'projectTemplate'
             const containers = document.querySelectorAll('[id^="projectTemplate"]');
-
+            
             containers.forEach(container => {
                 const containerId = container.id;
                 const projectName = containerId
@@ -173,9 +175,9 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <div class="row-1"></div>
                             </div>
                         </div>
-                        <div class="project-banner-2">
-                            <div class="row-1"></div>
-                        </div>
+                            <div class="project-banner-2">
+                                <div class="row-1"></div>
+                            </div>
 
                         <div class="project-section-3">
                             <div class="row-1">
@@ -212,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 </div>
                             </div>
                             <div class="row-2">
-                                <form action="/succes" method="post" data-netlify="true">
+                                <form action="/succes.html" method="post" data-netlify="true">
                                     <label for="name">NAAM:</label><br />
                                     <input type="text" id="name" name="name" /><br /><br />
 
@@ -228,8 +230,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 </form>
                             </div> 
                         </div>
-
-                        <footer>
+      <footer>
         <div class="row-1">
           <div class="col-1"><p>© Julian de Ligt 2024</p></div>
           <div class="col-2">
