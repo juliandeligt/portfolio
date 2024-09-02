@@ -119,29 +119,6 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('contact-form').addEventListener('submit', submitForm);
 });
 
-// Functie om het formulier te verzenden en door te sturen naar succespagina
-function submitForm(event) {
-    event.preventDefault(); // Voorkomt de standaard formulierverzending
-
-    // Verkrijg de gegevens van het formulier
-    var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
-    var subject = document.getElementById('subject').value;
-    var message = document.getElementById('message').value;
-
-    // Maak een mailto link (optioneel, als je dat nodig hebt)
-    var mailtoLink = 'mailto:juliandeligt@hotmail.nl' +
-        '?subject=' + encodeURIComponent(subject) +
-        '&body=' + encodeURIComponent('Name: ' + name + '\n\nMessage:\n' + message);
-
-    // Verander de URL om de pagina naar succes.html te sturen
-    window.location.href = 'succes.html';
-}
-
-// Voeg een event listener toe aan het formulier
-document.getElementById('contact-form').addEventListener('submit', submitForm);
-
-
 // Fetch and display project data
 document.addEventListener('DOMContentLoaded', () => {
     async function fetchAndDisplayProjectData() {
