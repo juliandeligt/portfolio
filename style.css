@@ -43,6 +43,63 @@ body {
     color: #3A82E4;
 }
 
+.thanks-page .logo {
+    color: #050B34;
+}
+
+.thanks-page nav a {
+    color: #050B34;
+}
+
+.thanks-section-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thanks-section-1 h2 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.thanks-section-1 h4 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.thanks-section-1 .row-1 {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.thanks-section-1 a.button {
+    width: fit-content;
+    align-self: center;
+    padding: 12px 12px;
+    border: none;
+    background-color: #050B34;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.thanks-section-1 button {
+    width: fit-content;
+    align-self: center;
+    padding: 12px 10px;
+    border: none;
+    background-color: #050B34;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -54,6 +111,28 @@ nav {
     position: relative; 
     z-index: 2; 
     height: 15vh;
+}
+
+@media (min-width: 850px) {
+.thanks-section-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(85vh - 80px) !important;
+}
+
+.thanks-section-1 .row-1 {
+    margin-top: -15vh;
+}
+
+footer {
+    background-color: #050B34;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
 }
 
 @media (max-width: 850px) {
@@ -582,7 +661,7 @@ form #message {
     max-width: 100%;
 }
 
-form #submit {
+form button {
     width: 20%;
     align-self: self-end;
     padding: 12px 0px;
@@ -595,7 +674,7 @@ form #submit {
 }
 
 
-form #submit:hover {
+button:hover {
     background-color: #040922;
 }
 

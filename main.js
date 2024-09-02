@@ -231,15 +231,17 @@ document.addEventListener('DOMContentLoaded', () => {
                                 </div>
                             </div>
                             <div class="row-2">
-                                <form action="/submit_form" method="post">
-                                    <label for="name">NAAM:</label><br />
-                                    <input type="text" id="name" name="name" /><br /><br />
-                                    <label for="subject">ONDERWERP:</label><br />
-                                    <input type="text" id="subject" name="subject" /><br /><br />
-                                    <label for="message">BERICHT:</label><br />
-                                    <textarea id="message" name="message"></textarea><br /><br />
-                                    <input type="submit" id="submit" value="VERSTUUR!" />
-                                </form>
+                            <form action="/succes" method="post" data-netlify="true">
+                                <label for="name">NAAM:</label><br />
+                                <input type="text" id="name" name="name" /><br /><br />
+
+                                <label for="subject">ONDERWERP:</label><br />
+                                <input type="text" id="subject" name="subject" /><br /><br />
+
+                                <label for="message">BERICHT:</label><br />
+                                <textarea id="message" name="message"></textarea><br /><br />
+                                <button type="submit">VERSTUREN</button>
+                            </form>
                             </div>
                         </div>
 
