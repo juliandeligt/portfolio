@@ -632,7 +632,7 @@ html {
     align-items: center;
 }
 
-.home-section-5 :is(#name, #subject, #message) {
+.home-section-5 :is(#name, #subject, #message, #email) {
     border: none;
     border-bottom: 2px solid black;
     padding-bottom: 15px;
@@ -640,7 +640,7 @@ html {
     font-weight: 500;
 }
 
-.home-section-5 :is(#name, #subject, #message):focus-visible {
+.home-section-5 :is(#name, #subject, #message, #email):focus-visible {
     outline: none;
 }
 
