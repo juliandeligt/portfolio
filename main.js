@@ -111,26 +111,23 @@ document.addEventListener('DOMContentLoaded', () => {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
             const data = await response.json();
-
-            // Get all elements with IDs starting with 'projectTemplate'
+    
             const containers = document.querySelectorAll('[id^="projectTemplate"]');
-            
+    
             containers.forEach(container => {
                 const containerId = container.id;
                 const projectName = containerId
-                    .replace('projectTemplate', '') // Remove the prefix
-                    .replace(/([A-Z])/g, ' $1') // Add spaces before capital letters
-                    .trim(); // Remove extra spaces
-
-                // Find the project based on the name
+                    .replace('projectTemplate', '')
+                    .replace(/([A-Z])/g, ' $1')
+                    .trim();
+    
                 const project = data.portfolio_projects.find(p => p.project_name === projectName);
-
+    
                 if (project) {
-                    // Conditionally add project services if not empty
                     const services = [project.project_service_1, project.project_service_2, project.project_service_3]
-                        .filter(service => service) // Filter out empty services
+                        .filter(service => service)
                         .map(service => `<p>${service}</p>`).join('');
-
+    
                     const projectTemplate = `
                         <div class="project-section-1">
                             <div class="row-1">
@@ -142,7 +139,6 @@ document.addEventListener('DOMContentLoaded', () => {
                                 </div>
                             </div>
                         </div>
-
                         <div class="project-section-2">
                             <div class="row-1">
                                 <div class="col-1 col">
@@ -175,10 +171,9 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <div class="row-1"></div>
                             </div>
                         </div>
-                            <div class="project-banner-2">
-                                <div class="row-1"></div>
-                            </div>
-
+                        <div class="project-banner-2">
+                            <div class="row-1"></div>
+                        </div>
                         <div class="project-section-3">
                             <div class="row-1">
                                 <h2>Het proces</h2>
@@ -191,7 +186,6 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <div class="col col-3"></div>
                             </div>
                         </div>
-
                         <div class="project-section-4">
                             <div class="row-2">
                                 <div class="col-1">
@@ -202,7 +196,6 @@ document.addEventListener('DOMContentLoaded', () => {
                                 </div>
                             </div>
                         </div>
-
                         <div class="home-section-5">
                             <div class="row-1">
                                 <div class="col-1">
@@ -214,50 +207,52 @@ document.addEventListener('DOMContentLoaded', () => {
                                 </div>
                             </div>
                             <div class="row-2">
-                                <form action="/succes" method="post" data-netlify="true">
+                                <form action="/succes.html" method="post" data-netlify="true">
                                     <label for="name">NAAM:</label><br />
                                     <input type="text" id="name" name="name" /><br /><br />
-
+    
                                     <label for="email">E-MAILADRES:</label><br />
                                     <input type="text" id="email" name="email" /><br /><br />
-
+    
                                     <label for="subject">ONDERWERP:</label><br />
                                     <input type="text" id="subject" name="subject" /><br /><br />
-
+    
                                     <label for="message">BERICHT:</label><br />
                                     <textarea id="message" name="message"></textarea><br /><br />
                                     <button type="submit">VERSTUREN</button>
                                 </form>
                             </div> 
                         </div>
-      <footer>
-        <div class="row-1">
-          <div class="col-1"><p>© Julian de Ligt 2024</p></div>
-          <div class="col-2">
-            <a
-              href="https://www.linkedin.com/in/julian-de-ligt-1586b9201?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-              target="_blank"
-            >
-              <img
-                src="icons/logo-linkedin.svg"
-                alt="LinkedIn logo"
-                width="40"
-                height="40"
-              />
-            </a>
-            <a
-              href="https://www.instagram.com/juliandeligt_?igsh=bmNwbWdleWJnNWFp&utm_source=qr"
-              target="_blank"
-            >
-              <img
-                src="icons/logo-instagram.svg"
-                alt="Instagram logo"
-                width="40"
-                height="40"
-              />
-            </a>
-          </div>
-        </div>`;
+                        <footer>
+                            <div class="row-1">
+                                <div class="col-1"><p>© Julian de Ligt 2024</p></div>
+                                <div class="col-2">
+                                    <a
+                                    href="https://www.linkedin.com/in/julian-de-ligt-1586b9201?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                                    target="_blank"
+                                    >
+                                    <img
+                                        src="icons/logo-linkedin.svg"
+                                        alt="LinkedIn logo"
+                                        width="40"
+                                        height="40"
+                                    />
+                                    </a>
+                                    <a
+                                    href="https://www.instagram.com/juliandeligt_?igsh=bmNwbWdleWJnNWFp&utm_source=qr"
+                                    target="_blank"
+                                    >
+                                    <img
+                                        src="icons/logo-instagram.svg"
+                                        alt="Instagram logo"
+                                        width="40"
+                                        height="40"
+                                    />
+                                    </a>
+                                </div>
+                            </div>
+                        </footer>
+                    `;
                     container.innerHTML = projectTemplate;
                 } else {
                     console.error('Project not found:', projectName);
@@ -267,6 +262,7 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error('Error fetching JSON data:', error);
         }
     }
-
+    
     fetchAndDisplayProjectData();
+    
 });
