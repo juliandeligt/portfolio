@@ -262,6 +262,36 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error('Error fetching JSON data:', error);
         }
     }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var form = document.getElementById('myForm');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Voorkom standaard formulier verzenden
+
+            // Haal formulierdata op
+            var formData = new FormData(form);
+
+            // Verzenden van data naar een server
+            fetch('/path/to/your/server/endpoint', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Netwerkreactie was niet OK.');
+                }
+                return response.text();
+            })
+            .then(data => {
+                // Redirect naar de succespagina
+                window.location.href = '/succes.html';
+            })
+            .catch(error => {
+                console.error('Er was een probleem met de fetch-operatie:', error);
+            });
+        });
+    });
     
     fetchAndDisplayProjectData();
     
