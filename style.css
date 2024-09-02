@@ -1392,6 +1392,10 @@ footer .row-1 .col-2 {
     .project-section-1 .row-1 .col-2 {
         margin-top: 130px;
     }
+
+    button {
+        width: 30% !important;
+    }
 }
 
 @media (max-width: 850px) {
@@ -1649,8 +1653,8 @@ footer .row-1 .col-2 {
         flex-direction: column;
         width: 110%;
     }
-    form #submit {
-        width: 100%;
+    button {
+        width: 100% !important;
     }
 
     .project-section-2 .row-1 .col-1 p {
