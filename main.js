@@ -220,34 +220,6 @@ document.addEventListener('DOMContentLoaded', () => {
                             </div>
                         </div>
 
-                        <div class="home-section-5">
-                            <div class="row-1">
-                                <div class="col-1">
-                                    <h2>Neem contact op!</h2>
-                                    <h4>
-                                    Laten we samen wat moois neerzetten!<br />
-                                    Stuur me een bericht en we spreken elkaar snel!
-                                    </h4>
-                                </div>
-                            </div>
-                            <div class="row-2">
-                                <form action="/succes" method="post" data-netlify="true">
-                                    <label for="name">NAAM:</label><br />
-                                    <input type="text" id="name" name="name" /><br /><br />
-
-                                    <label for="email">E-MAILADRES:</label><br />
-                                    <input type="text" id="email" name="email" /><br /><br />
-
-                                    <label for="subject">ONDERWERP:</label><br />
-                                    <input type="text" id="subject" name="subject" /><br /><br />
-
-                                    <label for="message">BERICHT:</label><br />
-                                    <textarea id="message" name="message"></textarea><br /><br />
-                                    <button type="submit">VERSTUREN</button>
-                                </form>
-                            </div>
-                        </div>
-
       <footer>
         <div class="row-1">
           <div class="col-1"><p>© Julian de Ligt 2024</p></div>
