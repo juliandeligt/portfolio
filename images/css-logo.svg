@@ -1,0 +1,40 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 274 297" width="274" height="297">
+	<title>Nieuw project</title>
+	<defs>
+		<image  width="274" height="297" id="img1" href="data:image/png;base64,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"/>
+		<linearGradient id="g1" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(NaN,NaN,NaN,NaN,NaN,NaN)">
+			<stop offset=".387" stop-color="#d1d3d4" stop-opacity="1"/>
+			<stop offset="1" stop-color="#d1d3d4" stop-opacity="0"/>
+		</linearGradient>
+		<linearGradient id="g2" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(NaN,NaN,NaN,NaN,NaN,NaN)">
+			<stop offset=".387" stop-color="#d1d3d4" stop-opacity="1"/>
+			<stop offset="1" stop-color="#d1d3d4" stop-opacity="0"/>
+		</linearGradient>
+		<linearGradient id="g3" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-153.59,0,0,-119.773,-613.344,927.44)">
+			<stop offset="0" stop-color="#ffffff"/>
+			<stop offset="1" stop-color="#e8e7e5"/>
+		</linearGradient>
+		<linearGradient id="g4" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-166.75,0,0,-32.303,-607.267,1032.56)">
+			<stop offset="0" stop-color="#ffffff"/>
+			<stop offset="1" stop-color="#e8e7e5"/>
+		</linearGradient>
+	</defs>
+	<style>
+		.s0 { fill: #040929 } 
+		.s1 { fill: #ffffff } 
+		.s2 { fill: url(#g1) } 
+		.s3 { fill: url(#g2) } 
+		.s4 { fill: url(#g3) } 
+		.s5 { opacity: .1;fill: #000000 } 
+		.s6 { fill: url(#g4) } 
+	</style>
+	<use id="Laag 1" href="#img1" x="0" y="0"/>
+	<path id="Layer" class="s0" d="m139.3 29.7v251.7h0.2l87.3-23.3 20.1-228.4z"/>
+	<path id="Layer" class="s1" d="m138 89.2l-77.2 31.9 2.6 31.5 74.6-31.6 79.3-33.7 3.3-32.3z"/>
+	<path id="Layer" class="s2" d="m59.9 121.8l2.6 31.5 74.6-31.6v-31.8z"/>
+	<path id="Layer" class="s3" d="m221.5 54.4l-82.7 34.2v31.8l79.4-33.7z"/>
+	<path id="Layer" class="s4" d="m60.9 124.6l2.5 31.6 114.5 0.4-2.6 42.1-37.6 10.5-36.3-9.1-2.1-26.1h-33.7l4.4 50.4 68 20 67.7-19.6 8.8-100.2z"/>
+	<path id="Layer" class="s5" d="m137.1 124.6h-77.2l2.6 31.6 74.6 0.2zm0 84.5l-0.4 0.1-36.2-9.1-2.2-26.1h-33.6l4.3 50.4 68.1 20z"/>
+	<path id="Layer" class="s6" d="m53.8 53.9h166.7l-3.3 32.3h-159.4z"/>
+	<path id="Layer" class="s5" d="m137 53.9h-84.1l4 32.3h80.1z"/>
+</svg>
