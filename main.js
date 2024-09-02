@@ -94,6 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // Center the first project on page load for mobile
     if (isMobile()) {
         centerProject(currentIndex);
     } else {
@@ -116,8 +117,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     document.getElementById('contact-form').addEventListener('submit', submitForm);
+});
 
-    // Fetch and display project data
+// Fetch and display project data
+document.addEventListener('DOMContentLoaded', () => {
     async function fetchAndDisplayProjectData() {
         try {
             const response = await fetch('projects.json');
@@ -245,35 +248,34 @@ document.addEventListener('DOMContentLoaded', function() {
                             </div>
                         </div>
 
-                        <footer>
-                            <div class="row-1">
-                                <div class="col-1"><p>© Julian de Ligt 2024</p></div>
-                                <div class="col-2">
-                                    <a
-                                      href="https://www.linkedin.com/in/julian-de-ligt-1586b9201?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-                                      target="_blank"
-                                    >
-                                      <img
-                                        src="icons/logo-linkedin.svg"
-                                        alt="LinkedIn logo"
-                                        width="40"
-                                        height="40"
-                                      />
-                                    </a>
-                                    <a
-                                      href="https://www.instagram.com/juliandeligt_?igsh=bmNwbWdleWJnNWFp&utm_source=qr"
-                                      target="_blank"
-                                    >
-                                      <img
-                                        src="icons/logo-instagram.svg"
-                                        alt="Instagram logo"
-                                        width="40"
-                                        height="40"
-                                      />
-                                    </a>
-                                </div>
-                            </div>
-                        </footer>`;
+      <footer>
+        <div class="row-1">
+          <div class="col-1"><p>© Julian de Ligt 2024</p></div>
+          <div class="col-2">
+            <a
+              href="https://www.linkedin.com/in/julian-de-ligt-1586b9201?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+              target="_blank"
+            >
+              <img
+                src="icons/logo-linkedin.svg"
+                alt="LinkedIn logo"
+                width="40"
+                height="40"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/juliandeligt_?igsh=bmNwbWdleWJnNWFp&utm_source=qr"
+              target="_blank"
+            >
+              <img
+                src="icons/logo-instagram.svg"
+                alt="Instagram logo"
+                width="40"
+                height="40"
+              />
+            </a>
+          </div>
+        </div>`;
                     container.innerHTML = projectTemplate;
                 } else {
                     console.error('Project not found:', projectName);
