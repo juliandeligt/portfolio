@@ -55,6 +55,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 85vh !important;
 }
 
 .thanks-section-1 h2 {
