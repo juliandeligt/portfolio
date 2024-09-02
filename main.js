@@ -214,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 </div>
                             </div>
                             <div class="row-2">
-                                <form name="contact" method="POST" data-netlify="true" action="/succes">
+                                <form id="contact-form" action="/succes" method="post" data-netlify="true">
                                     <label for="name">NAAM:</label><br />
                                     <input type="text" id="name" name="name" /><br /><br />
 
