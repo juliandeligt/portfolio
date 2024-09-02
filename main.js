@@ -116,12 +116,11 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = mailtoLink;
     }
 
-    const contactForm = document.getElementById('contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', submitForm);
-    }
+    document.getElementById('contact-form').addEventListener('submit', submitForm);
+});
 
-    // Fetch and display project data
+// Fetch and display project data
+document.addEventListener('DOMContentLoaded', () => {
     async function fetchAndDisplayProjectData() {
         try {
             const response = await fetch('projects.json');
@@ -193,9 +192,9 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <div class="row-1"></div>
                             </div>
                         </div>
-                        <div class="project-banner-2">
-                            <div class="row-1"></div>
-                        </div>
+                            <div class="project-banner-2">
+                                <div class="row-1"></div>
+                            </div>
 
                         <div class="project-section-3">
                             <div class="row-1">
@@ -232,7 +231,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 </div>
                             </div>
                             <div class="row-2">
-                                <form action="/succes" method="post" data-netlify="true">
+                                <form name="contact" method="POST" data-netlify="true" action="/succes">
                                     <label for="name">NAAM:</label><br />
                                     <input type="text" id="name" name="name" /><br /><br />
 
@@ -249,35 +248,34 @@ document.addEventListener('DOMContentLoaded', function() {
                             </div>
                         </div>
 
-                        <footer>
-                            <div class="row-1">
-                                <div class="col-1"><p>© Julian de Ligt 2024</p></div>
-                                <div class="col-2">
-                                    <a
-                                      href="https://www.linkedin.com/in/julian-de-ligt-1586b9201?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-                                      target="_blank"
-                                    >
-                                      <img
-                                        src="icons/logo-linkedin.svg"
-                                        alt="LinkedIn logo"
-                                        width="40"
-                                        height="40"
-                                      />
-                                    </a>
-                                    <a
-                                      href="https://www.instagram.com/juliandeligt_?igsh=bmNwbWdleWJnNWFp&utm_source=qr"
-                                      target="_blank"
-                                    >
-                                      <img
-                                        src="icons/logo-instagram.svg"
-                                        alt="Instagram logo"
-                                        width="40"
-                                        height="40"
-                                      />
-                                    </a>
-                                </div>
-                            </div>
-                        </footer>`;
+      <footer>
+        <div class="row-1">
+          <div class="col-1"><p>© Julian de Ligt 2024</p></div>
+          <div class="col-2">
+            <a
+              href="https://www.linkedin.com/in/julian-de-ligt-1586b9201?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+              target="_blank"
+            >
+              <img
+                src="icons/logo-linkedin.svg"
+                alt="LinkedIn logo"
+                width="40"
+                height="40"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/juliandeligt_?igsh=bmNwbWdleWJnNWFp&utm_source=qr"
+              target="_blank"
+            >
+              <img
+                src="icons/logo-instagram.svg"
+                alt="Instagram logo"
+                width="40"
+                height="40"
+              />
+            </a>
+          </div>
+        </div>`;
                     container.innerHTML = projectTemplate;
                 } else {
                     console.error('Project not found:', projectName);
