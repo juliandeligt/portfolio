@@ -245,7 +245,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                     <textarea id="message" name="message"></textarea><br /><br />
                                     <button type="submit">VERSTUREN</button>
                                 </form>
-                            </div>
+                            </div> 
                         </div>
 
       <footer>
