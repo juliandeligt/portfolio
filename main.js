@@ -100,7 +100,47 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
         scrollProject(currentIndex);
     }
+
+    // Form submission
+    function submitForm(event) {
+        event.preventDefault();
+
+        var name = document.getElementById('name').value;
+        var subject = document.getElementById('subject').value;
+        var message = document.getElementById('message').value;
+
+        var mailtoLink = 'mailto:juliandeligt@hotmail.nl' +
+            '?subject=' + encodeURIComponent(subject) +
+            '&body=' + encodeURIComponent('Name: ' + name + '\n\nMessage:\n' + message);
+
+        window.location.href = mailtoLink;
+    }
+
+    document.getElementById('contact-form').addEventListener('submit', submitForm);
 });
+
+// Functie om het formulier te verzenden en door te sturen naar succespagina
+function submitForm(event) {
+    event.preventDefault(); // Voorkomt de standaard formulierverzending
+
+    // Verkrijg de gegevens van het formulier
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var subject = document.getElementById('subject').value;
+    var message = document.getElementById('message').value;
+
+    // Maak een mailto link (optioneel, als je dat nodig hebt)
+    var mailtoLink = 'mailto:juliandeligt@hotmail.nl' +
+        '?subject=' + encodeURIComponent(subject) +
+        '&body=' + encodeURIComponent('Name: ' + name + '\n\nMessage:\n' + message);
+
+    // Verander de URL om de pagina naar succes.html te sturen
+    window.location.href = 'succes.html';
+}
+
+// Voeg een event listener toe aan het formulier
+document.getElementById('contact-form').addEventListener('submit', submitForm);
+
 
 // Fetch and display project data
 document.addEventListener('DOMContentLoaded', () => {
@@ -214,7 +254,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 </div>
                             </div>
                             <div class="row-2">
-                                <form id="contact-form" action="/succes" method="post" data-netlify="true">
+                                <form action="/succes" method="post" data-netlify="true">
                                     <label for="name">NAAM:</label><br />
                                     <input type="text" id="name" name="name" /><br /><br />
 
