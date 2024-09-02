@@ -1620,7 +1620,7 @@ footer .row-1 .col-2 {
         row-gap: 35px !important;
     }
     .home-section-5 {
-        margin-bottom: 500px;
+        margin-bottom: 600px;
     }
     .home-section-5 .row-2 {
         width: 85% !important;
@@ -1653,7 +1653,8 @@ footer .row-1 .col-2 {
         flex-direction: column;
         width: 110%;
     }
-    button {
+
+    :is(.home-section-5, .thanks-section-1) button {
         width: 100% !important;
     }
 
