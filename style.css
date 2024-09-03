@@ -37,6 +37,11 @@ body {
     color: white;
     font-size: 3.125rem; 
     font-weight: 800;
+    padding-top: 50px;
+}
+
+.nav-links {
+    padding-top: 50px;
 }
 
 .logo:hover {
@@ -111,7 +116,6 @@ nav {
     background-color: none;
     position: relative; 
     z-index: 2; 
-    height: 10vh;
 }
 
 @media (min-width: 850px) {
@@ -1397,6 +1401,15 @@ footer .row-1 .col-2 {
     button {
         width: 30% !important;
     }
+
+    #next {
+        right: 100px;
+    }
+
+    #prev {
+        position: absolute;
+        right: 180px;
+    }
 }
 
 @media (max-width: 850px) {
@@ -1434,15 +1447,6 @@ footer .row-1 .col-2 {
         width: 100%;
     }
 
-    #next {
-        right: 100px;
-    }
-
-    #prev {
-        position: absolute;
-        right: 180px;
-    }
-
     .home-section-2 .row-1 .col-1 {
         padding-left: 30px;
     }
@@ -1456,6 +1460,18 @@ footer .row-1 .col-2 {
 @media (min-width: 650px) {
     .only-mobile {
         display: none;
+    }
+}
+
+@media (max-width: 800px) and (min-height: 700px) {
+    .home-section-1 .row-1 {
+        width: unset !important;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .home-section-1 .row-1 .col-2 {
+        text-align: center;
     }
 }
 
@@ -1491,10 +1507,6 @@ footer .row-1 .col-2 {
     }
     #role {
         margin-top: 10px;
-    }
-    .home-section-1 .row-1 {
-        width: unset !important;
-        flex-direction: column;
     }
     .home-section-1 .row-1 .col-1 img {
         display: none;
@@ -1691,11 +1703,11 @@ footer .row-1 .col-2 {
 
     nav {
         justify-content: center;
+        height: auto;
     }
 
     nav .logo {
         font-size: 50px;
-        margin-top: 30px;
     }
 
     .home-section-2 .row-1 {
@@ -1748,5 +1760,23 @@ footer .row-1 .col-2 {
         height: 65%;
         object-fit: contain;
         margin-top: -14%;
+    }
+  }
+
+  @media (max-height: 400px) {
+    .img-background img {
+        width: 150px;
+    }
+
+    .home-section-1 h1 {
+        font-size: 20px !important;
+    }
+
+    .home-section-1 #role {
+        font-size: 15px !important;
+    }
+
+    .home-section-1 .row-1 .col-2 {
+        height: 40px;
     }
   }
