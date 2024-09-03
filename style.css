@@ -212,7 +212,7 @@ nav a:hover {
 
 .home-section-1 {
     background-image: url("images/section-1-background.webp");
-    min-height: 108vh;
+    min-height: 100vh;
     width: 100%;
     background-size: cover;
     margin-top: -125px;
@@ -239,11 +239,11 @@ nav a:hover {
 }
 
 .home-section-1 .row-1 .col-2 h1 {
-    font-size: 55px;
+    font-size: 65px;
 }
 
 .home-section-1 .row-1 .col-2 h2 {
-    font-size: 40px;
+    font-size: 55px;
 }
 
 .home-section-1 .row-1 .col-2 {
@@ -716,7 +716,7 @@ footer .row-1 .col-2 {
 .project-section-1 {
     display: flex;
     flex-direction: column;
-    min-height: 115vh;
+    height: 110vh;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -884,7 +884,7 @@ footer .row-1 .col-2 {
 
 .project-banner-2 {
     width: 100%;
-    height: 150px;
+    height: 200px;
     display: flex;
     justify-content: center;
     z-index: 2;
@@ -1106,27 +1106,6 @@ footer .row-1 .col-2 {
     .project-section-4 {
         padding-bottom: 75px !important;
     }
-
-    .img-background img {
-        width: 175px;
-    }
-}
-
-@media (min-width: 650px) and (max-width: 850px) {
-
-    .home-section-1 .row-1 {
-        gap: 80px;
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
-    .project-banner-2 {
-        width: 100%;
-        height: 250px;
-        display: flex;
-        justify-content: center;
-        z-index: 2;
-    }
 }
 
 
@@ -1218,8 +1197,13 @@ footer .row-1 .col-2 {
     height: 300px;
 }
 
+.project-banner-2 .row-1 {
+    width: 100%;
+    height: 300px;
+}
+
 .project-banner-2 {
-    height: 150px;
+    height: 300px;
 }
 
 
@@ -1301,7 +1285,7 @@ footer .row-1 .col-2 {
         width: 1225px;
     }
     .home-section-1 .row-1 .col-2 h1 {
-        font-size: 40px;
+        font-size: 55px;
     }
     .home-section-2 {
         height: 100% !important;
@@ -1722,10 +1706,6 @@ footer .row-1 .col-2 {
         margin-top: 50px;
     }
 
-    .img-background img {
-        width: 200px;
-    }
-
     .home-section-2 {
         height: 100%;
     }
@@ -1750,6 +1730,18 @@ footer .row-1 .col-2 {
 
     .home-section-2 .row-1 {
         width: 90% !important;
+    }
+
+    .home-section-1 .row-1 .col-2 h1 {
+        font-size: 30px;
+    }
+
+    .home-section-1 .row-1 .col-2 h2 {
+        font-size: 25px;
+    }
+
+    .img-background img {
+        width: 200px;
     }
 
     .home-section-2 h2 {
@@ -1790,13 +1782,16 @@ footer .row-1 .col-2 {
   }
 
   @media (max-height: 400px) {
+    .img-background img {
+        width: 150px;
+    }
 
     .home-section-1 h1 {
-        font-size: 30px !important;
+        font-size: 20px !important;
     }
 
     .home-section-1 #role {
-        font-size: 25px !important;
+        font-size: 15px !important;
     }
 
     .home-section-1 .row-1 .col-2 {
