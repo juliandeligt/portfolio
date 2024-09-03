@@ -27,6 +27,10 @@ h3 {
     font-size: 30px;
 }
 
+.project-titel h3 {
+    font-size: 22px;
+}
+
 h4 {
     font-size: 20px;
     color: #3A82E4;
@@ -1399,6 +1403,10 @@ footer .row-1 .col-2 {
         font-size: 50px;
     }
 
+    .home-section-1 {
+        min-height: 100vh;
+    }
+
     .home-section-2 .row-1 {
         width: 800px;
         gap: 77px;
@@ -1599,11 +1607,11 @@ footer .row-1 .col-2 {
         row-gap: 35px !important;
     }
     .home-section-5 {
-        margin-bottom: 600px;
+        margin-bottom: 550px;
     }
     .home-section-5 .row-2 {
-        width: 85% !important;
-        padding: 90px 60px;
+        width: 80% !important;
+        padding: 60px 60px;
     }
     .home-section-4 .row-2 {
         display: grid;
