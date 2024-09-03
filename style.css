@@ -878,24 +878,23 @@ footer .row-1 .col-2 {
 
 .project-banner {
     width: 100%;
-    height: 425px;
+    height: 400px;
     display: flex;
     justify-content: center;
     z-index: 2;
     position: absolute;
-    bottom: -200px;
+    bottom: -160px;
 }
 
 .project-banner-2 {
     width: 100%;
-    height: 425px;
+    height: 300px;
     display: flex;
     justify-content: center;
     z-index: 2;
 }
 
 :is(.project-banner, .project-banner-2) .row-1 {
-    background-image: url(/images/correct-banner.webp);
     height: 100%;
     width: 80%;
     z-index: 2;
@@ -916,7 +915,7 @@ footer .row-1 .col-2 {
     flex-direction: column;
     align-items: center;
     padding-bottom: 50px;
-    padding-top: 280px;
+    padding-top: 225px;
 }
 
 .project-section-3 h2 {

@@ -189,11 +189,28 @@ document.addEventListener('DOMContentLoaded', () => {
                                 </div>
                             </div>
                             <div class="project-banner">
-                                <div class="row-1"></div>
+                            <div 
+                                class="row-1" 
+                                style="
+                                    background-image: url('${project.project_banner}');
+                                    background-size: cover;
+                                    background-position: center;
+                                    background-repeat: no-repeat;
+                                ">
                             </div>
                         </div>
+
+                        </div>
                             <div class="project-banner-2">
-                                <div class="row-1"></div>
+                                <div 
+                                class="row-1" 
+                                style="
+                                    background-image: url('${project.project_banner}');
+                                    background-size: cover;
+                                    background-position: center;
+                                    background-repeat: no-repeat;
+                                ">
+                            </div>
                             </div>
 
                         <div class="project-section-3">
