@@ -243,7 +243,7 @@ nav a:hover {
 }
 
 .home-section-1 .row-1 img:first-child {
-    width: 225px !important;
+    width: 225px;
 }
 
 .home-section-1 .row-2 {
@@ -1464,7 +1464,7 @@ footer .row-1 .col-2 {
     .home-section-1 {
         margin-top: 0;
         padding-top: 0;
-        padding-bottom: 250px;
+        padding-bottom: 200px;
         justify-content: center;
         padding-left: 20px;
         padding-right: 20px;
@@ -1479,12 +1479,16 @@ footer .row-1 .col-2 {
     }
 
     .home-section-1 .only-mobile img {
-        width: 180px;
-        height: 280px;
         object-fit: cover;
         margin-top: 10px;
         position: relative;
     }
+
+    .home-section-1 .row-1 img:first-child {
+        height: auto;
+        width: 155px;
+    }
+
     #role {
         margin-top: 10px;
     }
