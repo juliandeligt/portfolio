@@ -1667,6 +1667,11 @@ footer .row-1 .col-2 {
         width: 110%;
     }
 
+    .project-section-1 h1 {
+        font-size: 35px !important;
+        margin-top: 30px;
+    }
+
     :is(.home-section-5, .thanks-section-1) button {
         width: 100% !important;
     }
