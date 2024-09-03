@@ -1668,7 +1668,9 @@ footer .row-1 .col-2 {
     }
 
     .project-section-1 h1 {
-        font-size: 35px !important;
+        font-size: 30px !important;
+        padding-left: 20px;
+        padding-right: 20px;
         margin-top: 30px;
     }
 
