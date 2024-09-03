@@ -8,7 +8,7 @@
 p, a {
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 a {
@@ -20,7 +20,7 @@ h3 {
 }
 
 h4 {
-    font-size: 22px;
+    font-size: 20px;
     color: #3A82E4;
     font-weight: 300;
 }
@@ -216,7 +216,7 @@ nav a:hover {
 
 .home-section-1 {
     background-image: url("images/section-1-background.webp");
-    min-height: 100vh;
+    min-height: 110vh;
     width: 100%;
     background-size: cover;
     margin-top: -125px;
@@ -236,6 +236,10 @@ nav a:hover {
     justify-content: space-evenly;
 }
 
+.home-section-1 .row-1 img:first-child {
+    width: 225px !important;
+}
+
 .home-section-1 .row-2 {
     display: flex;
     position: absolute;
@@ -243,11 +247,11 @@ nav a:hover {
 }
 
 .home-section-1 .row-1 .col-2 h1 {
-    font-size: 65px;
+    font-size: 50px;
 }
 
 .home-section-1 .row-1 .col-2 h2 {
-    font-size: 55px;
+    font-size: 40px;
 }
 
 .home-section-1 .row-1 .col-2 {
@@ -289,13 +293,13 @@ nav a:hover {
 }
 
 .home-section-2 h2 {
-    font-size: 60px;
+    font-size: 40px;
     margin-bottom: 25px;
 }
 
 .home-section-2 p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 40px;
 }
 
@@ -338,7 +342,7 @@ nav a:hover {
 }
 
 .home-section-3 h2 {
-    font-size: 45px;
+    font-size: 40px;
     color: white;
     font-weight: 600;
 }
@@ -595,7 +599,7 @@ html {
 }
 
 .home-section-4 h2 {
-    font-size: 45px;
+    font-size: 40px;
 }
 
 .home-section-5 {
@@ -616,7 +620,7 @@ html {
 }
 
 .home-section-5 .row-1 .col-1 h2 {
-    font-size: 45px;
+    font-size: 40px;
     color: white;
     margin-bottom: 15px;
 }
@@ -703,7 +707,7 @@ footer .row-1 p {
     color: white;
     font-family: 'Fira Code', sans-serif;
     font-weight: 300;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 footer .row-1 .col-2 {
@@ -714,13 +718,13 @@ footer .row-1 .col-2 {
 /* Project single page */
 
 .project-section-1 .row-1 .col-1 h1 {
-    font-size: 75px;
+    font-size: 55px;
 }
 
 .project-section-1 {
     display: flex;
     flex-direction: column;
-    height: 110vh;
+    height: 100vh;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -822,7 +826,7 @@ footer .row-1 .col-2 {
     margin-bottom: 30px;
     font-weight: 600;
     font-family: 'Fira Code';
-    font-size: 60px;
+    font-size: 40px;
 }
 
 .project-section-2 .row-1 .col-2 p {
@@ -905,7 +909,7 @@ footer .row-1 .col-2 {
 }
 
 .project-section-3 .row-1 h2 {
-    font-size: 60px;
+    font-size: 40px;
 }
 
 .project-section-3 {
@@ -963,9 +967,16 @@ footer .row-1 .col-2 {
 }
 
 .project-section-4 :is(.button, h4) {
-    font-size: 24px;
-    font-weight: 800;
+    font-size: 20px;
     font-family: Fira Code;
+}
+
+.project-section-4 h4 {
+    font-weight: 800;
+}
+
+.project-section-4 .button {
+    font-weight: 400;
 }
 
 .project-section-4 h4 {
@@ -1227,7 +1238,7 @@ footer .row-1 .col-2 {
 }
 
 .project-section-3 .row-1 h2 {
-    font-size: 45px;
+    font-size: 40px;
 }
 
 .project-section-3 {
@@ -1259,8 +1270,6 @@ footer .row-1 .col-2 {
 .project-section-4 :is(.button, h4) {
     font-size: 15px !important;
 }
-}
-
 }
 
 
@@ -1510,7 +1519,7 @@ footer .row-1 .col-2 {
     }
     .home-section-1 .only-mobile img {
         width: 180px;
-        height: 220px;
+        height: 250px;
         object-fit: cover;
         margin-top: 10px;
         position: relative;
@@ -1731,20 +1740,12 @@ footer .row-1 .col-2 {
         width: 90% !important;
     }
 
-    .home-section-1 .row-1 .col-2 h1 {
-        font-size: 30px;
-    }
-
-    .home-section-1 .row-1 .col-2 h2 {
-        font-size: 25px;
-    }
-
     .img-background img {
         width: 200px;
     }
 
     .home-section-2 h2 {
-        font-size: 45px;
+        font-size: 40px;
     }
 
     .home-section-2 p {
