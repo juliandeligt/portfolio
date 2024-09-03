@@ -219,11 +219,6 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <p>${project.project_process_1}</p>
                                 <p>${project.project_process_2}</p>
                             </div>
-                            <div class="row-2">
-                                <div class="col col-1"></div>
-                                <div class="col col-2"></div>
-                                <div class="col col-3"></div>
-                            </div>
                         </div>
 
                         <div class="project-section-4">
@@ -232,7 +227,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                     <h4>Volgend project:</h4>
                                 </div>
                                 <div class="col-2">
-                                    <a href="${project.project_next_link}">${project.project_next} ></a>
+                                    <a href="${project.project_next_link}" class="button">${project.project_next} ></a>
                                 </div>
                             </div>
                         </div>
