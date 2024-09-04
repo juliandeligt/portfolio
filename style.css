@@ -1746,7 +1746,7 @@ footer .row-1 .col-2 {
     }
   } */
 
-@media only screen and (min-width: 320px) and (max-width: 920px) and (orientation: landscape) {
+@media only screen and (min-width: 320px) and (max-width: 950px) and (orientation: landscape) {
     .home-section-1 .row-1 {
         height: 100vh !important;
         margin-top: 50px;
@@ -1832,10 +1832,4 @@ footer .row-1 .col-2 {
         width: 85%;
     }
   }
-
-  @media only screen and (min-width: 850px) and (max-width: 1200px) and (orientation: portrait) {
-    .home-section-1 {
-        min-height: 60vh;
-    }
-    }
   
