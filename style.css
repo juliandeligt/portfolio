@@ -1831,5 +1831,9 @@ footer .row-1 .col-2 {
         top: 230px;
         width: 85%;
     }
+
+    .project-section-2 {
+        margin-top: unset !important;
+    }
   }
   
