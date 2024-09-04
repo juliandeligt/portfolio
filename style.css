@@ -1234,6 +1234,10 @@ footer .row-1 .col-2 {
     gap: 10px;
 }
 
+.home-section-5 label {
+    font-size: 16px !important;
+}
+
 }
 
 
@@ -1358,13 +1362,22 @@ footer .row-1 .col-2 {
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1040px) {
     .project-section-1 {
         margin-top: 0px;
     }
 
+    .project-section-1 .row-1 .col-1 {
+        padding-left: 0px !important;
+    }
+
     .project-section-1 .row-1 {
         flex-direction: column;
+    }
+
+    .project-section-2 {
+        margin-top: -18vh;
+
     }
 
     .project-section-1 .row-1 .col-2 {
@@ -1431,6 +1444,7 @@ footer .row-1 .col-2 {
     .home-section-3 .row-2 {
         margin-left: 260px;
     }
+    
     
 }
 
@@ -1857,6 +1871,17 @@ footer .row-1 .col-2 {
 
     .project-section-1 .row-1 .col-2 {
         margin-top: 110px;
+    }
+
+    .project-section-2 .row-1 .col-1 p {
+        font-size: 16px;
+        margin-top: -5px;
+    }
+
+    .project-section-4 {
+        padding-top: 50px !important;
+        justify-content: flex-start;
+        padding-left: 30px;
     }
   }
   
