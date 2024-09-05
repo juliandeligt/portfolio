@@ -185,7 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 </div>
                                 <div class="col-4">
                                     <h3>Launcher</h3>
-                                    <p><a href="${project.project_launcher}" target="_blank">Design</a></p>
+                                    <p><a href="${project.project_launcher}" target="_blank">${project.launcher_type}</a></p>
                                 </div>
                             </div>
                             <div class="project-banner">

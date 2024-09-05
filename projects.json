@@ -18,7 +18,8 @@
       "project_header_img": "/images/correct-desktop-phone.png",
       "project_img_class": "double-img-header",
       "project_next": "Deepblue Discoveries",
-      "project_next_link": "deepblue-discoveries.html"
+      "project_next_link": "deepblue-discoveries.html",
+      "launcher_type": "Design"
     },
     {
       "project_name": "Deepblue Discoveries",
@@ -38,7 +39,8 @@
       "project_header_img": "/images/dpd-desktop-phone.png",
       "project_img_class": "double-img-header",
       "project_next": "Studienet",
-      "project_next_link": "studienet.html"
+      "project_next_link": "studienet.html",
+      "launcher_type": "Design"
     },
     {
       "project_name": "Estad.io",
@@ -58,7 +60,8 @@
       "project_header_img": "/images/estadio-desktop.png",
       "project_img_class": "single-desktop-header",
       "project_next": "Correct Electronics",
-      "project_next_link": "correct-electronics.html"
+      "project_next_link": "correct-electronics.html",
+      "launcher_type": "Website"
     },
     {
       "project_name": "Studienet",
@@ -78,7 +81,8 @@
       "project_header_img": "/images/studienet-mobile.png",
       "project_img_class": "single-mobile-header",
       "project_next": "Portal Horizon",
-      "project_next_link": "portal-horizon.html"
+      "project_next_link": "portal-horizon.html",
+      "launcher_type": "Design"
     },
     {
       "project_name": "Portal Horizon",
@@ -98,7 +102,8 @@
       "project_header_img": "/images/ph-desktop.png",
       "project_img_class": "single-desktop-header",
       "project_next": "Lancelot Brewers",
-      "project_next_link": "lancelot.html"
+      "project_next_link": "lancelot.html",
+      "launcher_type": "Website"
     },
     {
       "project_name": "Lancelot Brewers",
@@ -117,8 +122,9 @@
       "project_header_color": "#EEEEEE",
       "project_header_img": "/images/lancelot-desktop.png",
       "project_img_class": "single-desktop-header",
-      "project_next": "Fit 'n Ready",
-      "project_next_link": "fitnready.html"
+      "project_next": "Fit 'n Ready!",
+      "project_next_link": "fitnready.html",
+      "launcher_type": "Design"
     },
     {
       "project_name": "Fit'n Ready!",
@@ -138,7 +144,8 @@
       "project_header_img": "/images/fitready-mobile.png",
       "project_img_class": "single-mobile-header",
       "project_next": "Estad.io",
-      "project_next_link": "estadio.html"
+      "project_next_link": "estadio.html",
+      "launcher_type": "Design"
     }
   ]
 }
