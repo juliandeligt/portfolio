@@ -152,7 +152,7 @@ footer {
 
 @media (max-width: 850px) {
     p, a, label {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     h2 {
@@ -1061,9 +1061,19 @@ footer .row-1 .col-2 {
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1025px) {
     .project-banner-2 {
         display: none;
+    }
+}
+
+@media (max-width: 1025px) {
+    .project-banner {
+        display: none !important;
+    }
+
+    .project-section-3 {
+        padding-top: 100px;
     }
 }
 
@@ -1081,10 +1091,6 @@ footer .row-1 .col-2 {
 
     .project-banner {
         margin-top: unset !important;
-    }
-
-    .project-banner {
-        display: none !important;
     }
 
     .project-section-3 {
@@ -1371,10 +1377,15 @@ footer .row-1 .col-2 {
     }
 }
 
-@media (min-width: 900px) and (max-width: 1040px) {
+@media (min-width: 900px) and (max-width: 1020px) {
     .project-section-2 {
         margin-top: -18vh;
+    }
 
+    .project-section-4 {
+        padding-top: 50px !important;
+        justify-content: flex-start;
+        padding-left: 30px;
     }
 }
 
@@ -1457,14 +1468,12 @@ footer .row-1 .col-2 {
     }
 
     .home-section-3 .row-2 {
-        margin-left: 260px;
+        margin-left: 30px;
     }
 
     .thanks-section-1 {
         height: 95vh !important;
     }
-    
-    
 }
 
 @media (min-width: 650px) {
@@ -1488,6 +1497,13 @@ footer .row-1 .col-2 {
 @media (min-width: 650px) and (max-width: 850px) {
     .project-section-1 .row-1 .col-1 {
         margin-top: 100px;
+    }
+
+        
+    .project-section-4 {
+        padding-top: 50px !important;
+        justify-content: flex-start;
+        padding-left: 30px;
     }
 }
 
@@ -1588,7 +1604,7 @@ footer .row-1 .col-2 {
 
     .home-section-3 .row-1 {
         width: unset !important;
-        padding-top: 60px;
+        padding-top: 50px;
         padding-left: 25px;
         padding-right: 25px;
     }
@@ -1626,6 +1642,7 @@ footer .row-1 .col-2 {
     .home-section-4 {
         margin-top: 0;
         padding-bottom: 70px;
+        padding-top: 70px;
     }
     .home-section-4 .row-1 {
         width: unset !important;
@@ -1686,11 +1703,11 @@ footer .row-1 .col-2 {
     }
 }
 
-@media (min-height: 900px) {
+/* @media (min-height: 900px) {
     .project-section-2 {
         min-height: 62vh;
     }
-}
+} */
 
 /* @media screen and (max-height: 500px) {
     .home-section-1 .row-1 {
