@@ -1950,5 +1950,13 @@ footer .row-1 .col-2 {
         justify-content: flex-start;
         padding-left: 30px;
     }
+
+    .home-section-3 .row-2 .project-slider .project  {
+        scale: 0.8;
+    }
+
+    .home-section-3 .row-2 .project-slider {
+        gap: unset;
+    }
   }
   
