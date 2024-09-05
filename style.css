@@ -71,7 +71,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 85vh !important;
+    height: 77.2vh !important;
 }
 
 .thanks-section-1 h2 {
@@ -83,6 +83,12 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    gap: 10px;
+    margin-bottom: -30px;
+}
+
+.thanks-section-1 .row-1 h4 {
+    text-align: center !important;
 }
 
 .thanks-section-1 a.button {
@@ -125,12 +131,6 @@ nav {
 }
 
 @media (min-width: 850px) {
-.thanks-section-1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: calc(85vh - 80px) !important;
-}
 
 .project-banner-2 {
     height: 250px !important;
@@ -1458,6 +1458,10 @@ footer .row-1 .col-2 {
 
     .home-section-3 .row-2 {
         margin-left: 260px;
+    }
+
+    .thanks-section-1 {
+        height: 100vh !important;
     }
     
     
