@@ -1256,6 +1256,7 @@ footer .row-1 .col-2 {
     .home-section-3 {
         height: 100%;;
         width: 100%;
+        max-height: unset;
     }
 }
 
@@ -1275,9 +1276,11 @@ footer .row-1 .col-2 {
         width: 940px;
         gap: 90px;
     }
+
     .home-section-3 {
-        height: 50vh;
+        max-height: unset;
     }
+
     .home-section-3 .row-1 {
         width: 940px;
     }
@@ -1287,9 +1290,7 @@ footer .row-1 .col-2 {
 }
 
 @media (max-width: 1365px) and (min-width: 1201px) {
-    .home-section-4 {
-        margin-top: 150px;
-    }
+
 }
 
 @media (min-width: 1000px) and (max-width: 1300px) {
@@ -1309,7 +1310,7 @@ footer .row-1 .col-2 {
     }
 
     .home-section-2 {
-        height: 75vh;
+        height: 100vh;
     }
 
     .home-section-3 {
